@@ -1,0 +1,26 @@
+﻿<h2>Add New Car</h2>
+
+@model Car.Models.Car
+
+<form asp-action="Create">
+    Manufacturer:
+    <input asp-for="Manufacturer" />
+    <br />
+    Mode:
+    <input asp-for="Model" />
+    <br />
+    Year:
+    <input asp-for="Year" />
+    <br />
+    Fuel Type:
+    <input asp-for="FuelType" />
+    <br />
+    Licence Plate:
+    <input asp-for="LicencePlate" />
+    <br />
+    Date Registered:
+    <input asp-for="DateRegistered" />
+    <br />
+    <input type="submit" value="Save data" />
+</form>
+

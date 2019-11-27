@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rd27240\\Desktop\\Exam C#\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {}
+    "C:\\Users\\sk28148\\Desktop\\128148\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rd27240\\Desktop\\Exam C#\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {
+    "C:\\Users\\sk28148\\Desktop\\128148\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rd27240\\Desktop\\Exam C#\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "C:\\Users\\sk28148\\Desktop\\128148\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "C:\\Users\\rd27240\\Desktop\\Exam C#\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
-        "packagesPath": "C:\\Users\\rd27240\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rd27240\\Desktop\\Exam C#\\WebApplication1\\WebApplication1\\obj\\",
+        "projectPath": "C:\\Users\\sk28148\\Desktop\\128148\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "packagesPath": "C:\\Users\\sk28148\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sk28148\\Desktop\\128148\\WebApplication1\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\rd27240\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sk28148\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -58,6 +58,10 @@
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.10, )"
             }
           },
           "imports": [

@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "RCars";
+}
+@model List<Rented.Models.Car>
+<h2>RCars</h2>
+
+<table>
+
+    <tr>
+        <td>Rented Car:</td>
+</table>
+<table>
+    @foreach (var s in Model)
+    {
+        <tr>
+            <td>
+                @b.LicencePlate
+            </td>
+        </tr>
+    }
+</table>
