@@ -11,7 +11,7 @@ namespace WebApplication1.Models
         public DbSet<TestModel> TestModels { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
-            builder.UseSqlServer("Server=rd27240EX01;Database=DB02;Trusted_Connection=True;");
+            builder.UseSqlServer(@"Server=.\SQL330;Database=EXAM;Trusted_Connection=True;");
         }
              
     }
