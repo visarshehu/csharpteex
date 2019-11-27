@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "AddCar";
+}
+
+<h2>AddCar</h2>
+
+
+<form asp-action="Create">
+    Manufacturer:
+    <input asp-for="Manufacturer" />
+    <br />
+    Model:
+    <input asp-for="Model" />
+    <br />
+    Year:
+    <input asp-for="Year" />
+    <br />
+    FuelType:
+    <input asp-for="FuelType" />
+    <br />
+    LicencePlate:
+    <input asp-for="LicencePlate" />
+    <br />
+    DateRegistered:
+    <input asp-for=" DateRegistered" />
+    <br />
+    <input type="submit" value="Save data" />
+</form> 
