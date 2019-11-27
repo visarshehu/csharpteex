@@ -8,11 +8,14 @@ namespace WebApplication1.Models
 {
     public class DatabaseContext : DbContext
     {
+        public DbSet<User> Users { get; set; }
         public DbSet<TestModel> TestModels { get; set; }
+        public DbSet<Rented> RentedC { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
-            builder.UseSqlServer("Server=rd27240EX01;Database=DB02;Trusted_Connection=True;");
+            builder.UseSqlServer("Server=DB02;Database=fh27153EX01;Trusted_Connection=True;");
         }
-             
+        
     }
 }
