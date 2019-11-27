@@ -1,0 +1,20 @@
+﻿
+@model List<WebApplication1.Models.Message>
+
+<table>
+	<tr>
+		<td> Messages :</td>
+
+	</tr>
+
+	@foreach (var s in Model)
+	{
+		<tr>
+			<td>
+				@s.MessageText
+			</td>
+			
+		</tr>
+
+	}
+</table>
