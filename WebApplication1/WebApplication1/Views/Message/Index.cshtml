@@ -1,0 +1,25 @@
+﻿@model List<WebApplication1.Models.Message>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<table>
+    <tr>
+        <td>Messages</td>
+    </tr>
+
+    @foreach(var item in Model)
+    {
+<tr>
+    <td>
+        @item.MessageText
+    </td>
+</tr>
+    }
+    <td><a href="/Message/Create">Create</a></td>
+        <tr>
+                     
+        </tr>
+</table>
