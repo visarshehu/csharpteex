@@ -1,0 +1,23 @@
+﻿
+@model WebApplication1.Models.User
+
+
+    <form asp-action="Create">
+        Firstname:
+        <input asp-for="FirstName" />
+        <br />
+        Lastname:
+        <input asp-for="LastName" />
+        <br />
+        Username:
+        <input asp-for="Username" />
+        <br />
+        Password:
+        <input asp-for="Password" />
+        <br />
+        Email:
+        <input asp-for="Email" />
+        <br />
+        <input type="submit" value="Save data" />
+    </form>
+
