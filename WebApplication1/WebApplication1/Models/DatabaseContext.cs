@@ -9,9 +9,11 @@ namespace WebApplication1.Models
     public class DatabaseContext : DbContext
     {
         public DbSet<TestModel> TestModels { get; set; }
+        public DbSet<User> User { get; set; }
+        public DbSet<Car> Car { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
-            builder.UseSqlServer("Server=rd27240EX01;Database=DB02;Trusted_Connection=True;");
+            builder.UseSqlServer("Server=DB02;Database=dt26570EX01;Trusted_Connection=True;");
         }
              
     }
