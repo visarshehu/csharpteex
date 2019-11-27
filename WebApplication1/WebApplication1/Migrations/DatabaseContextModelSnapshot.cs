@@ -18,6 +18,32 @@ namespace WebApplication1.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("WebApplication1.Models.ChatRoom", b =>
+                {
+                    b.Property<string>("Name")
+                        .ValueGeneratedOnAdd();
+
+                    b.HasKey("Name");
+
+                    b.ToTable("ChatRooms");
+                });
+
+            modelBuilder.Entity("WebApplication1.Models.Message", b =>
+                {
+                    b.Property<string>("MessageText")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("ChatRoomName");
+
+                    b.Property<bool>("IsRead");
+
+                    b.HasKey("MessageText");
+
+                    b.HasIndex("ChatRoomName");
+
+                    b.ToTable("Messages");
+                });
+
             modelBuilder.Entity("WebApplication1.Models.TestModel", b =>
                 {
                     b.Property<int>("Id")
@@ -29,6 +55,46 @@ namespace WebApplication1.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("TestModels");
+                });
+
+            modelBuilder.Entity("WebApplication1.Models.User", b =>
+                {
+                    b.Property<string>("Username")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("ChatRoomName");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasMaxLength(20);
+
+                    b.Property<string>("LastName")
+                        .IsRequired();
+
+                    b.Property<string>("Password")
+                        .IsRequired();
+
+                    b.Property<string>("email");
+
+                    b.HasKey("Username");
+
+                    b.HasIndex("ChatRoomName");
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("WebApplication1.Models.Message", b =>
+                {
+                    b.HasOne("WebApplication1.Models.ChatRoom")
+                        .WithMany("Messages")
+                        .HasForeignKey("ChatRoomName");
+                });
+
+            modelBuilder.Entity("WebApplication1.Models.User", b =>
+                {
+                    b.HasOne("WebApplication1.Models.ChatRoom")
+                        .WithMany("Users")
+                        .HasForeignKey("ChatRoomName");
                 });
 #pragma warning restore 612, 618
         }

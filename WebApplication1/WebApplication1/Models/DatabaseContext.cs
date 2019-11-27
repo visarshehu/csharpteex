@@ -9,10 +9,13 @@ namespace WebApplication1.Models
     public class DatabaseContext : DbContext
     {
         public DbSet<TestModel> TestModels { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Message> Messages { get; set; }
+        public DbSet<ChatRoom> ChatRooms { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
-            builder.UseSqlServer("Server=rd27240EX01;Database=DB02;Trusted_Connection=True;");
+            builder.UseSqlServer("Server=db02;Database=ps28062EX01;Trusted_Connection=True;");
         }
-             
+      
     }
 }
